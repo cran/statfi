@@ -17,14 +17,29 @@ Type 'demo()' for some demos, 'help()' for on-line help, or
 'help.start()' for an HTML browser interface to help.
 Type 'q()' to quit R.
 
+[Previously saved workspace restored]
+
 > library(devtools)
+
+Attaching package: ‘devtools’
+
+The following objects are masked from ‘package:utils’:
+
+    ?, help
+
+The following object is masked from ‘package:base’:
+
+    system.file
+
 > document("../../")
-Loading required package: roxygen2
 Updating statfi documentation
 Loading statfi
 Loading required namespace: pxR
 Loading required package: pxR
 Loading required package: stringr
+Loading required package: reshape2
+Loading required package: RJSONIO
+Loading required package: plyr
 Statistics Finland R tools. Copyright (C) 2010-2014 Leo Lahti, Juuso Parkkinen and Joona Lehtomaki. This is free software from the rOpenGov project http://ropengov.github.io
 > 
 > library(knitr)
@@ -32,64 +47,62 @@ Statistics Finland R tools. Copyright (C) 2010-2014 Leo Lahti, Juuso Parkkinen a
 
 
 processing file: ../../vignettes/statfi_tutorial.Rmd
-  |                                                                         |                                                                 |   0%  |                                                                         |......                                                           |   9%
+  |                                                                         |                                                                 |   0%  |                                                                         |......                                                           |  10%
   ordinary text without R code
 
-  |                                                                         |............                                                     |  18%
+  |                                                                         |.............                                                    |  20%
 label: install (with options) 
 List of 1
  $ eval: logi FALSE
 
-  |                                                                         |..................                                               |  27%
+  |                                                                         |....................                                             |  30%
   ordinary text without R code
 
-  |                                                                         |........................                                         |  36%
+  |                                                                         |..........................                                       |  40%
 label: install2 (with options) 
 List of 1
  $ eval: logi FALSE
 
-  |                                                                         |..............................                                   |  45%
+  |                                                                         |................................                                 |  50%
   ordinary text without R code
 
-  |                                                                         |...................................                              |  55%
+  |                                                                         |.......................................                          |  60%
 label: tilastokeskus-1 (with options) 
 List of 2
  $ warning: logi FALSE
  $ message: logi FALSE
 
 Downloading http://pxweb2.stat.fi/database/StatFin/StatFin_rap.csv
-Warning in list_statfi_files() : NAs introduced by coercion
-  |                                                                         |.........................................                        |  64%
+  |                                                                         |..............................................                   |  70%
   ordinary text without R code
 
-  |                                                                         |...............................................                  |  73%
+  |                                                                         |....................................................             |  80%
 label: tilastokeskus-2 (with options) 
 List of 2
  $ warning: logi FALSE
  $ message: logi FALSE
 
 Reading StatFi data from  http://pxweb2.stat.fi/Database/StatFin/tul/tvt/2009/120_tvt_2009_2011-02-18_tau_112_fi.px
-Warning in read_px(url) : NAs introduced by coercion
-  |                                                                         |.....................................................            |  82%
+  |                                                                         |..........................................................       |  90%
   ordinary text without R code
 
-  |                                                                         |...........................................................      |  91%
+  |                                                                         |.................................................................| 100%
 label: sessioninfo (with options) 
 List of 2
  $ message: logi FALSE
  $ warning: logi FALSE
 
-  |                                                                         |.................................................................| 100%
-  ordinary text without R code
-
 
 output file: ../../vignettes/statfi_tutorial.md
 
 [1] "../../vignettes/statfi_tutorial.md"
+Warning messages:
+1: In list_statfi_files() : NAs introduced by coercion
+2: In read_px(url) : NAs introduced by coercion
 > 
 > 
 > 
 > 
 > proc.time()
    user  system elapsed 
-  3.093   0.096   8.311 
+  1.915   0.103   3.942 
